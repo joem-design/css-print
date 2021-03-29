@@ -134,7 +134,7 @@ aside {
     border-radius: 10px;
 }
 
-aside h3 {
+.aside h3 {
     color: var(--accent);
     margin-top: 0;
 }
@@ -167,5 +167,59 @@ footer {
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 3rem;
+    }
+}
+
+@media screen {
+    .printonly {
+        display: none;
+    }
+}
+
+@media print {
+     :root {
+        --base-size: 0.8em;
+    }
+    body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    header img {
+        max-height: 0.5in;
+    }
+    nav {
+        display: none;
+    }
+    picture {
+        filter: grayscale(1);
+    }
+    .content {
+        display: block;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: var(--base-size);
+    }
+    article {
+        margin-bottom: 0;
+    }
+    aside {
+        margin: 0;
+    }
+    .aside {
+        background-color: white;
+        color: black;
+        margin: 0.25in 0;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .aside h3 {
+        color: black;
+    }
+    footer,
+    .footer a {
+        background-color: white;
+        color: black;
+        margin: 0;
     }
 }
