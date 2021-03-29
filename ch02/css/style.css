@@ -187,6 +187,10 @@ footer {
 /* print styles */
 
 @media print {
+
+    .printonly {
+        clear:both;
+    }
     nav,
     article img {
         display: none;
