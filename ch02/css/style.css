@@ -189,4 +189,37 @@ footer {
     .sidebar, .footer, .content {
         display: block;
     }
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    :root {
+        --base-size: 0.8em;
+        --type-scale: 1.25;
+    }
+
+    header {
+        text-align:left;
+    }
+
+    img {
+        max-height:0.5in;
+        float: left;
+        margin: 0 0.25in 0.25in 0;
+    }
+    aside {
+        clear:both;
+    }
+    .content {
+        clear:both;
+    }
+
+    h1 {
+        margin-top:auto;
+    }
+
+    footer {
+        border-bottom:none;
+    }
 }
