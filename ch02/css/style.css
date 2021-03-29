@@ -177,17 +177,16 @@ footer {
     }
 }
 
-.printonly {
-    display:none;
+@media screen {
+    .printonly {
+        display:none;
+    }
 }
+
 
 /* print styles */
 
 @media print {
-    .printonly {
-        display: block;
-    }
-
     nav,
     article img {
         display: none;
