@@ -230,6 +230,18 @@ footer {
     .printonly {
         clear: both;
     }
+
+    a[href]::after {
+        content: " (" attr(href) ") ";
+        font-size: var(--base-size)
+    }
+    .social a[href] {
+        display:block;
+        margin-bottom:0.25in;
+    }
+    .social a[href]::after {
+        content: " " attr(href);
+    }
 }
 
 
