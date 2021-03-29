@@ -177,11 +177,12 @@ footer {
     }
 }
 
+
+/* print styles */
+
 @media print {
-    
-    nav, article img {
+    nav,
+    article img {
         display: none;
     }
-
-
 }
