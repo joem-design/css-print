@@ -134,6 +134,13 @@ footer {
     margin-right: 0.5rem;
 }
 
+
+/* one possible method when combined with a matching declaration in the print MQ 
+.printonly {
+    display: none;
+}
+*/
+
 @media (min-width: 650px) {
     header {
         text-align: left;
@@ -177,20 +184,10 @@ footer {
     }
 }
 
-@media screen {
-    .printonly {
-        display:none;
-    }
-}
-
 
 /* print styles */
 
 @media print {
-
-    .printonly {
-        clear:both;
-    }
     nav,
     article img {
         display: none;
@@ -225,5 +222,21 @@ footer {
     }
     footer {
         border-bottom: none;
+    }
+    /* matching declaration to the display: none on line 136
+    .printonly {
+        display: block;
+    } */
+    .printonly {
+        clear: both;
+    }
+}
+
+
+/* OR you can do this, so the text only shows on screens, not on print */
+
+@media screen {
+    .printonly {
+        display: none;
     }
 }
