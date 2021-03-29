@@ -185,41 +185,35 @@ footer {
     article img {
         display: none;
     }
-
-    .sidebar, .footer, .content {
+    .sidebar,
+    .footer,
+    .content {
         display: block;
     }
-
     body {
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia, "Times New Roman", Times, serif;
     }
-
-    :root {
+     :root {
         --base-size: 0.8em;
-        --type-scale: 1.25;
     }
-
     header {
-        text-align:left;
+        text-align: left;
     }
-
+    .content {
+        clear: both;
+    }
+    aside {
+        clear: both;
+    }
     img {
-        max-height:0.5in;
+        max-height: 0.5in;
         float: left;
         margin: 0 0.25in 0.25in 0;
     }
-    aside {
-        clear:both;
-    }
-    .content {
-        clear:both;
-    }
-
     h1 {
-        margin-top:auto;
+        margin-top: auto;
     }
-
     footer {
-        border-bottom:none;
+        border-bottom: none;
     }
 }
